@@ -1,5 +1,5 @@
 package me.oliver;
-//create a function thats asks the user for input and then when selected will display and be assigned to approiate variable.
+// Task One, Ask the user to input something and tell them what it is.
 
 import me.oliver.data.Data;
 
@@ -15,7 +15,7 @@ public class Main {
     public static void getInput() {
         Scanner sc = new Scanner(System.in);
 
-        // Task One
+
          if(sc.hasNextBoolean()){
             System.out.println("bool");
              //boolean = true/false
