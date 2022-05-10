@@ -16,92 +16,82 @@ public class Calculator {
         if (mathType.equalsIgnoreCase("addition")) {
             System.out.println("Whats the first number you want to add?");
 
-            int firstNumber = scan.nextInt();
+            float firstNumber = scan.nextFloat();
 
             System.out.println("Enter your second number");
 
-            int secondNumber = scan.nextInt();
+            float secondNumber = scan.nextFloat();
 
-            System.out.println(firstNumber + " + " + secondNumber + " =");
-            System.out.println(firstNumber + secondNumber);
+            System.out.println(firstNumber + " + " + secondNumber + " = " + (firstNumber + secondNumber));
 
-        }
-        else if (mathType.equalsIgnoreCase("subtraction")) {
+
+        } else if (mathType.equalsIgnoreCase("subtraction")) {
             System.out.println("Whats the first number you want to subtract?");
 
-            int firstNumber = scan.nextInt();
+            float firstNumber = scan.nextFloat();
 
             System.out.println("Enter your second number");
 
-            int secondNumber = scan.nextInt();
+            float secondNumber = scan.nextFloat();
 
-            System.out.println(firstNumber + " - " + secondNumber + " =");
-            System.out.println(firstNumber - secondNumber);
-        }
-        else if (mathType.equalsIgnoreCase("division")) {
+            System.out.println(firstNumber + " - " + secondNumber + " = " + (firstNumber - secondNumber));
+
+        } else if (mathType.equalsIgnoreCase("division")) {
             System.out.println("Whats the first number you want to divide?");
 
-            int firstNumber = scan.nextInt();
+            float firstNumber = scan.nextFloat();
 
             System.out.println("Enter your second number");
 
-            int secondNumber = scan.nextInt();
+            float secondNumber = scan.nextFloat();
 
-            System.out.println(firstNumber + " / " + secondNumber + " =");
-            System.out.println(firstNumber / secondNumber);
-        }
-        else if (mathType.equalsIgnoreCase("multiplication")) {
+            System.out.println(firstNumber + " / " + secondNumber + " = " + (firstNumber / secondNumber));
+        } else if (mathType.equalsIgnoreCase("multiplication")) {
             System.out.println("Whats the first number you want to multiply?");
 
-            int firstNumber = scan.nextInt();
+            float firstNumber = scan.nextFloat();
 
             System.out.println("Enter your second number");
 
-            int secondNumber = scan.nextInt();
+            float secondNumber = scan.nextFloat();
 
-            System.out.println(firstNumber + " x " + secondNumber + " =");
-            System.out.println(firstNumber * secondNumber);
-        }
-        else if (mathType.equalsIgnoreCase("powers")) {
+            System.out.println(firstNumber + " x " + secondNumber + " = " + (firstNumber * secondNumber));
+        } else if (mathType.equalsIgnoreCase("powers")) {
             System.out.println("Whats is your base number");
 
-           int firstNumber = scan.nextInt();
+            float firstNumber = scan.nextFloat();
 
-           System.out.println("Enter the exponent");
+            System.out.println("Enter the exponent");
 
-           int secondNumber = scan.nextInt();
+            float secondNumber = scan.nextFloat();
 
-            System.out.println(firstNumber + "^" + secondNumber + " =");
-            System.out.println(Math.pow(firstNumber, secondNumber));
+            System.out.println(firstNumber + "^" + secondNumber + " = " + (Math.pow(firstNumber, secondNumber)));
 
-
-        }
-        else if (mathType.equalsIgnoreCase("modulus")) {
+        } else if (mathType.equalsIgnoreCase("modulus")) {
             System.out.println("Please enter your first number");
 
-            int firstNumber = scan.nextInt();
+            float firstNumber = scan.nextFloat();
 
             System.out.println("Enter your second number");
 
-            int secondNumber = scan.nextInt();
+            float secondNumber = scan.nextFloat();
 
             System.out.println(firstNumber + " % " + secondNumber + " =");
-            System.out.println("Whole Number Equation = " + (firstNumber - (firstNumber % secondNumber) + "/" + (firstNumber - (firstNumber % secondNumber)) / secondNumber ));
+            System.out.println("Whole Number Equation = " + (firstNumber - (firstNumber % secondNumber) + "/" + (firstNumber - (firstNumber % secondNumber)) / secondNumber));
             System.out.println("Remainder = " + (firstNumber % secondNumber));
 
-        }
-        else if (mathType.equalsIgnoreCase("floor-division")){
+        } else if (mathType.equalsIgnoreCase("floor-division")) {
             System.out.println("Please enter your first number");
 
-            int firstNumber = scan.nextInt();
+            long firstNumber = scan.nextLong();
 
             System.out.println("Please enter your second number");
 
-            int secondNumber = scan.nextInt();
+            long secondNumber = scan.nextLong();
 
-            System.out.println(firstNumber + " / " + secondNumber + " Floor =");
-            System.out.println(Math.floorDiv(firstNumber, secondNumber));
-        }
+            System.out.println(firstNumber + " / " + secondNumber + " Floor = " + (Math.floorDiv(firstNumber, secondNumber)));
+        } else System.out.println("Please select from one of the options next time!");
+
 
     }
 
