@@ -1,5 +1,5 @@
+// Task One
 package me.oliver;
-// Task One, Ask the user to input something and tell them what it is.
 
 import me.oliver.data.Data;
 
