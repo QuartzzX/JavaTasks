@@ -15,7 +15,7 @@ public class Main {
     public static void getInput() {
         Scanner sc = new Scanner(System.in);
 
-
+        // Task One
          if(sc.hasNextBoolean()){
             System.out.println("bool");
              //boolean = true/false
