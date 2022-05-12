@@ -3,7 +3,7 @@ package me.oliver;
 
 import java.util.Scanner;
 
-public class Calculator {
+public class TaskTwo {
 
     public static void main(String[] args) {
 
