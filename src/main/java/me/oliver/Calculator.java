@@ -90,6 +90,7 @@ public class Calculator {
             long secondNumber = scan.nextLong();
 
             System.out.println(firstNumber + " / " + secondNumber + " Floor = " + (Math.floorDiv(firstNumber, secondNumber)));
+
         } else System.out.println("Please select from one of the options next time!");
 
 
