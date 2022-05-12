@@ -1,5 +1,6 @@
 package me.oliver;
 // Task One Extra
+// Print a five int array and then print just the first 3 digits.
 public class TaskOneExtra {
 
     public static void main(String[] args) {
