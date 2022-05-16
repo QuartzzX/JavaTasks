@@ -3,7 +3,7 @@ package me.oliver;
 public class TaskThreeExtra {
     public static void main(String[] args) {
         //Initialize array
-        int [] arr = new int [] {1, 2, 3, 4, 5};
+        int [] arr = new int [] {1, 3, 5, 7, 9};
         System.out.println("Original array: ");
         for (int j : arr) {
             System.out.print(j + " ");
